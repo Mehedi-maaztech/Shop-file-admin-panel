@@ -1,0 +1,9 @@
+.supplyinvoice .container .para{
+    padding: 0;
+    margin: 0;
+}
+.supplyinvoice .container{
+    width: 2480px !important;
+    height: 3508px !important;
+    padding-top: 80px;
+}

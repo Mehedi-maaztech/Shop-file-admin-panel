@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Wholesaler</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- tab icon -->
+        <link rel="shortcut icon" href="https://maaelectronicsbd.com/uploads/others/favicon.png">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+        <!-- font awasome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <!-- customcss -->
+        <link rel="stylesheet" href="./resourse/style/style.css">
+        
+    </head>
+    <body>
+        <!-- navbar -->
+        <div class="vertical-nav nav-bg" id="sidebar">
+            <div class="mobilemenuclose text-right">
+            <button id="moblileClose" class="btn nav-text-cl">
+                <i class="fas fa-times"></i><span></span>
+            </button>
+            </div>
+            <div class="py-4 px-3 mb-4 nav-bg nav-text-cl">
+                <div class="media d-flex align-item-center">
+                    <img src="https://maaelectronicsbd.com/uploads/others/favicon.png" alt="" width="40" class="img-fluid mr-2">
+                    <div class="media-body">
+                        <h5 class="m-0 text-uppercase">Maa Electronics</h5>
+                        <small class="text-cstm-cl-50" >Shop Management App</small>
+                    </div>
+                </div>
+            </div>
+
+            <p class="nav-icon-cl font-weight-bold text-uppercase px-3 small pb-4 mb-0 nav-bg">Deshboard</p>
+
+            <ul class="nav flex-column nav-bg mb-0">
+                <li class="nav-item">
+                    <a id="homemenu" class="nav-link activemenu">
+                        <i class="fas fa-home mx-1 mr-3"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#sales" role="button" aria-expanded="false" aria-controls="sales">
+                        <i class="fas fa-handshake mx-1 mr-3"></i>Sales</a>
+                    </a>
+                </li>
+                <div class="collapse" id="sales">
+                    <div class="card card-body nav-bg-50">
+                        <li class="nav-item">
+                            <a id="addsales" class="nav-link">
+                                <i class="fas fa-user-plus mx-1 mr-3"></i>Add Sales</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="coustomerlist" class="nav-link">
+                                <i class="fas fa-list mx-1 mr-3"></i>Customer List
+                            </a>
+                        </li>
+                    </div>
+                </div>
+
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#purchase" role="button" aria-expanded="false" aria-controls="purchase">
+                        <i class="fas fa-shopping-bag mx-1 mr-3"></i>Purchase
+                    </a>
+                </li>
+                <div class="collapse" id="purchase">
+                    <div class="card card-body nav-bg-50">
+                        <li class="nav-item">
+                            <a id="addpurchase" class="nav-link">
+                                <i class="fas fa-cart-plus mx-1 mr-3"></i>Add Purchase Product
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="purchaselist" class="nav-link">
+                                <i class="fas fa-align-left mx-1 mr-3"></i>Purchase Product List
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <li class="nav-item">
+                    <a id="addproductitems" class="nav-link">
+                        <i class="fas fa-thumbtack mx-1 mr-3"></i>Add Product Items
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="stock" class="nav-link">
+                        <i class="fas fa-store-alt mx-1 mr-3"></i>Total Stock
+                    </a>
+                </li>
+            </ul>
+            <div class="logout">
+                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt mx-1 mr-3 b-0"></i></i>Log Out</a>
+            </div>
+        </div>
+        <!-- end navber -->
+        <div class="tab-content page-content px-5 pt-3"  id="content">
+
+            <button id="sidebarCollapseIn" class="btn rounded-pill shadow-sm px-4 mb-4 nav-text-cl nav-bg">
+                <i class="fas fa-caret-left mr-2"></i><span>Toggle</span>
+            </button>
+            <button id="sidebarCollapseOut" class="btn rounded-pill shadow-sm px-4 mb-4 nav-text-cl btn2 nav-bg">
+                <span>Toggle</span><i class="fas fa-caret-right ml-2"></i>
+            </button>
+            
+            <div id="wholesalerform" class="salesform py-3 mt-5 text-cstm-cl">
+                <h4 class="text-secondary text-uderline text-uppercase pb-2">Wholesaler Information</h4>
+
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong><i class="fas fa-check-circle mr-2"></i></strong>Sales Details Successfully Update
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                
+                <form method="post">
+                    <div class="form-group">
+                        <label> ID</label>
+                        <input type="number" class="form-control" name="price" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label> Name</label>
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label> Address</label>
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label> Phone Number</label>
+                        <input type="number" class="form-control" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label> Products</label>
+                        <input type="text" class="form-control" name="quantity" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label> Items</label>
+                        <input type="number" class="form-control" name="quantity" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label> Total amount</label>
+                        <input type="number" class="form-control" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label> Choose</label>
+                        <select class="form-control" name="products">
+                            <option selected>Paid</option>
+                            <option value="1">Deu</option>
+                        </select>
+                    </div>
+                    <input type="hidden" value="date">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        
+
+
+        <!-- Option 1: jQuery and Bootstrap Bundle -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+         <!-- custom js -->
+         <script src="./resourse/js/custom.js"></script>
+    </body>
+</html>

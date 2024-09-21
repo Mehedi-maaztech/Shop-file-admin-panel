@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>wholesalerprofile</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- tab icon -->
+        <link rel="shortcut icon" href="https://maaelectronicsbd.com/uploads/others/favicon.png">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+        <!-- font awasome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+        <!-- customcss -->
+        <link rel="stylesheet" href="./resourse/style/style.css">
+        
+    </head>
+    <body>
+        <!-- navbar -->
+        <div class="vertical-nav nav-bg" id="sidebar">
+            <div class="mobilemenuclose text-right">
+            <button id="moblileClose" class="btn nav-text-cl">
+                <i class="fas fa-times"></i><span></span>
+            </button>
+            </div>
+            <div class="py-4 px-3 mb-4 nav-bg nav-text-cl">
+                <div class="media d-flex align-item-center">
+                    <img src="https://maaelectronicsbd.com/uploads/others/favicon.png" alt="" width="40" class="img-fluid mr-2">
+                    <div class="media-body">
+                        <h5 class="m-0 text-uppercase">Maa Electronics</h5>
+                        <small class="text-cstm-cl-50" >Shop Management App</small>
+
+                    </div>
+                </div>
+            </div>
+
+            <p class="nav-text-cl font-weight-bold text-uppercase px-3 small pb-4 mb-0 nav-bg">Deshboard</p>
+
+            <ul class="nav flex-column nav-bg mb-0">
+                <li class="nav-item">
+                    <a id="homemenu" class="nav-link activemenu">
+                        <i class="fas fa-home mx-1 mr-3"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#sales" role="button" aria-expanded="false" aria-controls="sales">
+                        <i class="fas fa-handshake mx-1 mr-3"></i>Sales</a>
+                    </a>
+                </li>
+                <div class="collapse" id="sales">
+                    <div class="card card-body nav-bg-50">
+                        <li class="nav-item">
+                            <a id="addsales" class="nav-link">
+                                <i class="fas fa-user-plus mx-1 mr-3"></i>Add Sales</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="coustomerlist" class="nav-link">
+                                <i class="fas fa-list mx-1 mr-3"></i>Customer List
+                            </a>
+                        </li>
+                    </div>
+                </div>
+
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#purchase" role="button" aria-expanded="false" aria-controls="purchase">
+                        <i class="fas fa-shopping-bag mx-1 mr-3"></i>Purchase
+                    </a>
+                </li>
+                <div class="collapse" id="purchase">
+                    <div class="card card-body nav-bg-50">
+                        <li class="nav-item">
+                            <a id="addpurchase" class="nav-link">
+                                <i class="fas fa-cart-plus mx-1 mr-3"></i>Add Purchase Product
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="purchaselist" class="nav-link">
+                                <i class="fas fa-align-left mx-1 mr-3"></i>Purchase Product List
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <li class="nav-item">
+                    <a id="addproductitems" class="nav-link">
+                        <i class="fas fa-thumbtack mx-1 mr-3"></i>Add Product Items
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="stock" class="nav-link">
+                        <i class="fas fa-store-alt mx-1 mr-3"></i>Total Stock
+                    </a>
+                </li>
+            </ul>
+            <div class="logout">
+                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt mx-1 mr-3 b-0"></i></i>Log Out</a>
+            </div>
+        </div>
+        <!-- end navber -->
+        <div class="tab-content page-content px-5 pt-3"  id="content">
+
+            <button id="sidebarCollapseIn" class="btn rounded-pill shadow-sm px-4 mb-4 nav-text-cl" style="background-color: #292e49 !important;">
+                <i class="fas fa-caret-left mr-2"></i><span>Toggle</span>
+            </button>
+            <button id="sidebarCollapseOut" class="btn rounded-pill shadow-sm px-4 mb-4 nav-text-cl btn2">
+                <span>Toggle</span><i class="fas fa-caret-right ml-2"></i>
+            </button>
+
+            <div id="adminprofile" class="adminprofile py-4 mt-5">
+                <h4 class="secondary-texxt text-uderline text-uppercase">Profile</h4>
+
+                <div class="container my-5">
+                    <div class="row text-cstm-cl">
+                        <table class="table table-responsive-lg">
+                            <tr class="table-active">
+                                <td class="mt-3 border-0"><b>Information</b></td>
+                                <td class="mt-3 border-0 text-right">
+                                    <button type="button" class="badge badge-primary px-4 py-2 border-0" data-toggle="modal" data-target="#editmodel">Edit</button>
+                                </td>
+                            </tr>
+                            <!-- Modal -->
+                            <div class="modal fade" id="editmodel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content nav-bg">
+                                        <div class="modal-header text-secondary">
+                                            <h5 class="modal-title" id="exampleModalLabel">Edit Information</h5>
+                                            <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <form method="post">
+                                                <div class="form-group">
+                                                    <label class="text-secondary"> Name</label>
+                                                    <input type="text" value="Name" class="form-control" name="name" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-secondary"> User Name</label>
+                                                    <input type="text" value="name37" class="form-control" name="admin_name" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-secondary"> Email</label>
+                                                    <input type="email" value="example@gmail.com" class="form-control" name="varified_email" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-secondary"> Phone Number</label>
+                                                    <input type="number" value="87123908132" class="form-control" name="phone_number" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-secondary"> Role</label>
+                                                    <input type="text" value="Whole" class="form-control" name="role" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-secondary"> Invoice Number Series</label>
+                                                    <input type="text" value="09812" class="form-control" name="invoice" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-secondary"> Company Address</label>
+                                                    <input type="text" value="" class="form-control" name="company_address" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-secondary"> Country</label>
+                                                    <input type="text" value="Bangladesh" class="form-control" name="country" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="text-secondary"> Postal Code</label>
+                                                    <input type="text" value="" class="form-control" name="postal_code" required>
+                                                </div>
+                                                <input type="hidden" name="date" value="Fri 26-01-2024  11:57:pm">
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-primary" name="updateprofile">Save changes</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <tr>
+                                <td class="border-0 pt-3">
+                                    <img src="./image/logo.png">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-0">Name</td>
+                                <td class="border-0">Dipjoy Sarker</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0">Type</td>
+                                <td class="border-0">Dipjoy789</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0">Address</td>
+                                <td class="border-0">dipjoy@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0">Tin</td>
+                                <td class="border-0">8734520091</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0">location</td>
+                                <td class="border-0">Whole Saler</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0">Start contact time</td>
+                                <td class="border-0">Maa202101</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0">Stablish time</td>
+                                <td class="border-0">XYZ</td>
+                            </tr>
+                            <tr>
+                                <td class="border-0">Transiction</td>  
+                                <td class="border-0">245784@54</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card text-center">
+                                <div class="card-header text-bold text-cstm-cl">
+                                    Total parchase product
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-text text-success">৳</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card text-center">
+                                <div class="card-header text-bold text-cstm-cl">
+                                    Total parchase product
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-text text-success">৳</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card text-center">
+                                <div class="card-header text-bold text-cstm-cl">
+                                    Due amount
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-text text-success">৳</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card text-center">
+                                <div class="card-header text-bold text-cstm-cl">
+                                    Paid amount
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-text text-success">৳</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row text-cstm-cl">
+                        <div class="col-12">
+                            <div id="" class="showcustomers pt-4 mt-4">
+                               <div class="row">
+                                    <div class="col-6">
+                                        <h4 class="text-secondary text-uderline text-uppercase">Recent transection</h4>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" id="searchcustomers" class="form-control mb-3  float-right" placeholder="&#128269;">
+                                    </div>
+                               </div>
+                                <div class="details">
+                                    <div class="card card-body">
+                                        <table class="table table-responsive-lg table-striped table-hover">
+                                            <thead class="thead-custom-bg thead-custom-cl">
+                                                <tr>
+                                                    <th scope="col"> SL NO</th>
+                                                    <th scope="col"> Invoice</th>
+                                                    <th scope="col"> Product Name</th>
+                                                    <th scope="col"> Item</th>
+                                                    <th scope="col"> over</th>
+                                                    <th scope="col"> Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="purchaseslist"> 
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>100</td>
+                                                    <td>Mark</td>
+                                                    <td>4587545445</td>
+                                                    <td>Butterfly</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>100</td>
+                                                    <td>Mark</td>
+                                                    <td>4587545445</td>
+                                                    <td>Butterfly</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>100</td>
+                                                    <td>Mark</td>
+                                                    <td>4587545445</td>
+                                                    <td>Butterfly</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row justify-content-end pt-2">
+                                        <div class="col-2">
+                                            <a href="#" class="btn btn-primary">See more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        <!-- Option 1: jQuery and Bootstrap Bundle -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+         <!-- custom js -->
+         <script src="./custom.js"></script>
+    </body>
+</html>

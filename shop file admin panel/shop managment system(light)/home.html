@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- tab icon -->
+        <link rel="shortcut icon" href="https://maaelectronicsbd.com/uploads/others/favicon.png">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+        <!-- font awasome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <!-- customcss -->
+        <link rel="stylesheet" href="./resourse/style/style.css">
+        
+    </head>
+    <body>
+        <!-- navbar -->
+        <div class="vertical-nav nav-bg" id="sidebar">
+            <div class="mobilemenuclose text-right">
+            <button id="moblileClose" class="btn nav-text-cl">
+                <i class="fas fa-times"></i><span></span>
+            </button>
+            </div>
+            <div class="py-4 px-3 mb-4 nav-bg nav-text-cl">
+                <div class="media d-flex align-item-center">
+                    <img src="https://maaelectronicsbd.com/uploads/others/favicon.png" alt="" width="40" class="img-fluid mr-2">
+                    <div class="media-body">
+                        <h5 class="m-0 text-uppercase">Maa Electronics</h5>
+                        <small class="text-cstm-cl-50" >Shop Management App</small>
+                    </div>
+                </div>
+            </div>
+
+            <p class="nav-icon-cl font-weight-bold text-uppercase px-3 small pb-4 mb-0 nav-bg">Deshboard</p>
+            <ul class="nav flex-column nav-bg mb-0">
+                <li class="nav-item">
+                    <a id="homemenu" class="nav-link activemenu">
+                        <i class="fas fa-home mx-1 mr-3"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#sales" role="button" aria-expanded="false" aria-controls="sales">
+                        <i class="fas fa-handshake mx-1 mr-3"></i>Sales</a>
+                    </a>
+                </li>
+                <div class="collapse" id="sales">
+                    <div class="card card-body nav-bg-50">
+                        <li class="nav-item">
+                            <a id="addsales" class="nav-link">
+                                <i class="fas fa-user-plus mx-1 mr-3"></i>Add Sales</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="coustomerlist" class="nav-link">
+                                <i class="fas fa-list mx-1 mr-3"></i>Customer List
+                            </a>
+                        </li>
+                    </div>
+                </div>
+
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#purchase" role="button" aria-expanded="false" aria-controls="purchase">
+                        <i class="fas fa-shopping-bag mx-1 mr-3"></i>Purchase
+                    </a>
+                </li>
+                <div class="collapse" id="purchase">
+                    <div class="card card-body nav-bg-50">
+                        <li class="nav-item">
+                            <a id="addpurchase" class="nav-link">
+                                <i class="fas fa-cart-plus mx-1 mr-3"></i>Add Purchase Product
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="purchaselist" class="nav-link">
+                                <i class="fas fa-align-left mx-1 mr-3"></i>Purchase Product List
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <li class="nav-item">
+                    <a id="addproductitems" class="nav-link">
+                        <i class="fas fa-thumbtack mx-1 mr-3"></i>Add Product Items
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="stock" class="nav-link">
+                        <i class="fas fa-store-alt mx-1 mr-3"></i>Total Stock
+                    </a>
+                </li>
+            </ul>
+            <div class="logout">
+                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt mx-1 mr-3 b-0"></i></i>Log Out</a>
+            </div>
+        </div>
+        <!-- end navber -->
+        <div class="tab-content page-content px-5 pt-3"  id="content">
+
+            <button id="sidebarCollapseIn" class="btn rounded-pill shadow-sm px-4 mb-4 nav-text-cl nav-bg">
+                <i class="fas fa-caret-left mr-2"></i><span>Toggle</span>
+            </button>
+            <button id="sidebarCollapseOut" class="btn rounded-pill shadow-sm px-4 mb-4 nav-text-cl btn2 nav-bg">
+                <span>Toggle</span><i class="fas fa-caret-right ml-2"></i>
+            </button>
+
+            <div id="home" class="tab-pane home pt-5 mt-3  active">
+                <div class="container">
+
+                    <div class="row content-center text-cstm-cl">
+                        <div class="col-lg-4 text-center mt-3">
+                            <div class="card">
+                                <div class="card-header text-bold text-cstm-cl">
+                                    Today Total Sales
+                                </div>
+                                <div class="card-body ">
+                                    <h1 class="card-title"><i class="fas fa-handshake mx-1"></i></h1>
+                                    <p class="card-text text-success"><b>8</b></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center mt-3">
+                            <div class="card">
+                                <div class="card-header text-bold text-cstm-cl">
+                                    Today Earning
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title"><i class="fas fa-dollar-sign mx-1"></i></h1>
+                                    <p class="card-text text-success"><b>৳ 25000</b></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center mt-3">
+                            <div class="card">
+                                <div class="card-header text-bold text-cstm-cl">
+                                    Total Sales
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title"><i class="fas fa-align-justify mx-1"></i></h1>
+                                    <p class="card-text text-success"><b>1500051</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-cstm-cl mt-4">
+                        <div class="col-lg-8 text-center">
+                            <div class="card">
+                                <div class="card-header text-bold text-cstm-cl">
+                                    Today Sales list
+                                </div>
+                                <div class="card-body ">
+                                    <table class="table table-striped table-hover">
+                                        <thead class="thead-custom-bg thead-custom-cl">
+                                            <tr>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbody-secondary">
+                                            <tr>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>dipjoy</td>
+                                                <td>Otta</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <div class="card-header text-bold text-cstm-cl">
+                                    last day tatel earning
+                                </div>
+                                <div class="card-body">
+                                <p class="card-text text-success"><b>৳ 50000</b></p>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-header text-bold text-cstm-cl">
+                                    Product Items
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-striped table-hover">
+                                        <tbody class="tbody-secondary">
+                                            <tr>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>@mdo</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="salesform" class="tab-pane salesform py-3 mt-5 text-cstm-cl">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong><i class="fas fa-check-circle mr-2"></i></strong>Sales Details Successfully Update
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                
+                <form method="post">
+                    <div class="form-group">
+                        <label> Customer Name</label>
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label> Customer Phone</label>
+                        <input type="number" class="form-control" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label> Customer Address</label>
+                        <input type="text" class="form-control" name="address">
+                    </div>
+                    <div class="form-group">
+                        <label> Products</label>
+                        <select class="form-control" name="products">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label> Quantity</label>
+                        <input type="number" class="form-control" name="quantity" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label> Price</label>
+                        <input type="number" class="form-control" name="price" min="0">
+                    </div>
+                    <input type="hidden" value="date">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="showcustomers" class="tab-pane showcustomers pt-4 mt-4">
+                <h4 class="text-secondary text-uderline text-uppercase">Customers Information</h4>
+                <div class="col-12">
+                    <input type="text" id="searchcustomers" class="form-control mb-3 col-md-4 col-12 float-right" placeholder="&#128269;">
+                </div>
+                <div class="details">
+                    <table class="table table-striped table-hover">
+                        <thead class="thead-custom-bg thead-custom-cl">
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody id="customerslist">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>dipjoy</td>
+                                <td>Otta</td>
+                                <td>@mdo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="purchases" class="tab-pane purchase pt-4 pb-2">
+                <h4 class="text-secondary text-uderline text-uppercase my-4">Purchase Information</h4>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong><i class="fas fa-check-circle mr-2"></i></strong>Sales Details Successfully Update
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form method="post">
+                    <div class="form-group">
+                        <label> Whole Saller Name</label>
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label> Whole Saller Phone number</label>
+                        <input type="number" class="form-control" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label> Whole Saller Address</label>
+                        <input type="text" class="form-control" name="address">
+                    </div>
+                    <div class="form-group">
+                        <label> Products</label>
+                        <select class="form-control" name="products">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label> Quantity</label>
+                        <input type="number" class="form-control" name="quantity" min="0">
+                    </div>
+                    <div class="custom-file my-2">
+                        <input type="file" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                    <input type="hidden" value="date">
+                    <div class="form-group pt-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="showpurchaselist" class="tab-pane showpurchaselist pt-4 mt-4">
+                <h4 class="text-secondary text-uderline text-uppercase">Purchase Products List</h4>
+                <div class="col-12">
+                    <input type="text" id="searchpurchases" class="form-control mb-3 col-md-4 col-12 float-right" placeholder="&#128269;">
+                </div>
+                <div class="details">
+                    <table class="table table-striped table-hover">
+                        <thead class="thead-custom-bg thead-custom-cl">
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody id="purchaseslist"> 
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="productsitems" class="tab-pane purchase pt-4">
+                <h4 class="text-secondary text-uderline text-uppercase my-4">Add Product Items</h4>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong><i class="fas fa-check-circle mr-2"></i></strong>Sales Details Successfully Update
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form method="post">
+                    <div class="form-group">
+                        <label> Product Item Name</label>
+                        <input type="text" class="form-control" name="productitem">
+                    </div>
+                    <input type="hidden" value="date">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Save Item</button>
+                    </div>
+                </form>
+                <h4 class="text-secondary text-uderline text-uppercase mt-4">Product item List</h4>
+                <div class="col-12">
+                    <input type="text" id="searchitem" class="form-control mb-3 col-md-4 col-12 float-right" placeholder="&#128269;">
+                </div>
+                <div class="details">
+                    <table class="table table-striped table-hover">
+                        <thead class="thead-custom-bg thead-custom-cl">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody id="itemlist"> 
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="totalstock" class="tab-pane totalstock pt-4 mt-4">
+                <h4 class="text-secondary text-uderline text-uppercase">Stocked Products List</h4>
+                <div class="col-12">
+                    <input type="text" id="searchproduct" class="form-control mb-3 col-md-4 col-12 float-right" placeholder="&#128269;">
+                </div>
+                <div class="details">
+                    <table class="table table-striped hover">
+                        <thead class="thead-custom-bg thead-custom-cl">
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productlist">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+
+        <!-- Option 1: jQuery and Bootstrap Bundle -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+         <!-- custom js -->
+         <script src="./resourse/js/custom.js"></script>
+    </body>
+</html>
